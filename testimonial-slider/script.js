@@ -39,7 +39,7 @@ updateTestimonials();
 
 function updateTestimonials() {
   const { name, photUrl, text } = testimonials[idx];
-  // imgEl.src = photUrl;
+  imgEl.src = testimonials[idx].photoUrl;
   console.log(imgEl.src);
   textEl.innerText = text;
   usernameEl.innerText = name;
