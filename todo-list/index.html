@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <section class="text-center lg:w-3/5 mx-auto">
+      <h2 class="font-bold text-3xl text-center">Todo List 🎙🧾</h2>
+      <div class="my-3 space-x-3">
+        <input
+          type="text"
+          class="border border-green-500 rounded-sm px-2 py-1 outline-none"
+          placeholder="Type here.."
+          id="text-input"
+        />
+        <button
+          id="add-task"
+          class="border-2 border-green-500 px-2 py-1 rounded-md text-green-500 font-bold"
+        >
+          Add Task
+        </button>
+      </div>
+
+      <table id="table" class="w-1/2 mx-auto">
+        <thead>
+          <tr>
+            <th class="border-1 border-gray-500 text-left">Number</th>
+            <th class="border-1 border-gray-500 text-left">Description</th>
+            <th class="border-1 border-gray-500 text-left">Action</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <div class="text-right">
+        <button class="bg-red-500 p-2 text-white rounded-sm">Delete All</button>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
